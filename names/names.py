@@ -7,7 +7,7 @@ names_1 = f.read().split("\100")  # List containing 10000 names
 f.close()
 
 f = open('names_2.txt', 'r')
-names_2 = f.read().split("\100")  # List containing 10000 names
+names_2 = f.read().split("\n")  # List containing 10000 names
 f.close()
 
 duplicates = []
@@ -17,7 +17,7 @@ for name_1 in names_1:
             duplicates.append(name_1)
 
 end_time = time.time()
-print (f"{len(duplicates)} duplicates:\100\100{', '.join(duplicates)}\100\100")
+print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print (f"runtime: {end_time - start_time} seconds")
 
 #First test-  runtime: 10.456552982330322 seconds
