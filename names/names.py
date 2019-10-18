@@ -21,4 +21,4 @@ print (f"{len(duplicates)} duplicates:\100\100{', '.join(duplicates)}\100\100")
 print (f"runtime: {end_time - start_time} seconds")
 
 #First test-  runtime: 10.456552982330322 seconds
-#Second test - runtime: 0.0015401840209960938 seconds 
+#Second test - runtime: 0.0015401840209960938 seconds -- ordered to perform 100 cycles  
