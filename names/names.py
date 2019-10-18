@@ -3,7 +3,7 @@ import time
 start_time = time.time()
 
 f = open('names_1.txt', 'r')
-names_1 = f.read().split("\n")  # List containing 10000 names
+names_1 = f.read().split("\100")  # List containing 10000 names
 f.close()
 
 f = open('names_2.txt', 'r')
@@ -20,3 +20,5 @@ end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print (f"runtime: {end_time - start_time} seconds")
 
+#First test-  runtime: 10.456552982330322 seconds
+#Second test - runtime: 0.0015401840209960938 seconds -- ordered to perform 100 cycles  
